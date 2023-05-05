@@ -168,7 +168,8 @@ def overrideImages():
     for i in range(len(listPathImages)):
         if imagesExportReady[i] != None:
             imagesExportReady[i].save(listPathImages[i])
-
+    print("saved!")    
+    
 cButtonsContainer = Canvas(ws)
 buttons_frame = Frame(cButtonsContainer)
 buttons_frame.grid(column=0, row=2, sticky="N")
